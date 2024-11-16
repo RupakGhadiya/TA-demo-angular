@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="card">
+    <h1>{{ isEditMode ? "Edit Recipe" : "Add Recipe" }}</h1>
+    <form (ngSubmit)="saveRecipe()">
+      <label>Title:</label>
+      <input [(ngModel)]="recipe.title" name="title" required />
+
+      <label>Description:</label>
+      <textarea
+        [(ngModel)]="recipe.description"
+        name="description"
+        required
+      ></textarea>
+
+      <label>Ingredients (comma-separated):</label>
+      <input
+        [(ngModel)]="ingredientsString"
+        (ngModelChange)="updateIngredients($event)"
+        name="ingredients"
+        required
+      />
+
+      <label>Instructions:</label>
+      <textarea
+        [(ngModel)]="recipe.instructions"
+        name="instructions"
+        required
+      ></textarea>
+
+      <button type="submit">Save</button>
+      <button routerLink="/recipes">Cancel</button>
+    </form>
+  </div>
+</div>

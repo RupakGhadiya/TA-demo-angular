@@ -1,0 +1,85 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card {
+  width: 30%;
+  padding: 12px;
+  background-color: rgb(202, 202, 202);
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card h1 {
+  margin: 0px 0px 10px 0px;
+}
+.card button {
+  width: 100%;
+  padding: 7px 20px;
+  border-radius: 12px;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid black;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+.card button:hover {
+  background-color: rgb(202, 202, 202);
+  border: 2px solid black;
+  color: black;
+}
+
+table {
+  background: #012b39;
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  margin: 1em;
+}
+th {
+  border-bottom: 1px solid #364043;
+  color: #e2b842;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+td {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.65em 1em;
+}
+.buttonTable {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.buttonTable button {
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid black;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+.buttonTable button:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+.disabled td {
+  color: #4f5f64;
+}
+tbody tr {
+  transition: background 0.25s ease;
+}
+tbody tr:hover {
+  background: #014055;
+}
